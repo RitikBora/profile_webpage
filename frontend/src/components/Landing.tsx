@@ -17,9 +17,9 @@ export function Landing() {
             </div>
         
         </div>
-        <div className="absolute bottom-0 right-0 overflow-hidden">
-            <div className="relative -bottom-16 -right-16">
-                <img src="profilePhoto.png" alt="" width="900px" height="850px" className=""/>
+        <div className=" absolute bottom-0 right-0 overflow-hidden">
+            <div className="relative -top-10 -right-10">
+                <img src="profilePhoto.png" alt="" width="800px" height="750px" className=""/>
             </div>
         </div>
 
