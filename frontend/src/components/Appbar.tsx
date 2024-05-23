@@ -1,6 +1,16 @@
-import React from 'react';
+import  { useState } from 'react';
+import { useRecoilState } from 'recoil';
+import { selectedPageAtom } from '../recoil/atom';
+
 
 export function Appbar() {
+  const [selectedPage , setSelectedPage] = useRecoilState(selectedPageAtom);
+
+  function changePage(page : string)
+  {
+    setSelectedPage(page);
+  }
+
   return (
     <div className='flex justify-between pt-2 relative'> 
       <div className="flex pl-48">
@@ -15,24 +25,14 @@ export function Appbar() {
         </a>
       </div>
       <div className="flex justify-between w-1/3 pt-5 relative">
-        <a className="font-semibold hover:font-bold cursor-pointer" target="_blank" href="https://github.com/RitikBora">
-          Github
-        </a>
-        <div className="font-semibold hover:font-bold cursor-pointer relative group">
-          <div className="group">
-            Projects
-            <div className="absolute top-full left-0 bg-white text-black px-4 py-2 rounded-lg hidden group-hover:block z-10">
-              Projects Popup
-            </div>
-          </div>
+        <div className={`${selectedPage === "home" ? "font-bold": "font-medium"}  hover:font-bold cursor-pointer`}  onClick={() => changePage("home")}>
+          Home
         </div>
-        <div className="font-semibold hover:font-bold cursor-pointer relative group">
-          <div className="group">
-            Contact
-            <div className="absolute top-full left-0 bg-white text-black px-4 py-2 rounded-lg hidden group-hover:block z-10">
-              Contacts Popup
-            </div>
-          </div>
+        <div className={`${selectedPage === "projects" ? "font-bold": "font-medium"} hover:font-bold  cursor-pointer`} onClick={() => changePage("projects")}>
+            Projects
+        </div>
+        <div className={`${selectedPage === "contact" ? "font-bold": "font-medium"} hover:font-bold  cursor-pointer`} onClick={() => changePage("contact")}>
+          Contact
         </div>
       </div>
       <div> </div>
