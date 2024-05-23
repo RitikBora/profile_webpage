@@ -5,8 +5,8 @@ import React from 'react';
 const projects = [
   { name: 'Video meet platform', link: 'https://ritikboradev.com/zoom' , status: "Click to view more details"},
   { name: 'Blog website', link: 'https://ritikboradev.com/medium' , status: "Click to view more details"},
-  { name: 'Paytm clone', link: 'https://example.com/project-three' , status: "Click to view more details" },
-  { name: 'Coursera clone', link: 'https://example.com/project-one'  , status: "Click to view more details"},
+  { name: 'Paytm clone', link: 'https://ritikboradev.com/paytm' , status: "Click to view more details" },
+  { name: 'Coursera clone', link: 'https://ritikboradev.com/coursera/users'  , status: "Click to view more details"},
   { name: 'Chess multiplayer', link: '' , status: "Comming soon!" },
   { name: 'Chatting portal', link: '' ,status: "Comming soon!" },
 

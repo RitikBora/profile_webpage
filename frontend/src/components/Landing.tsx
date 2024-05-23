@@ -3,6 +3,7 @@ import { Home } from "./Home";
 import { selectedPageAtom } from "../recoil/atom";
 import { Projects } from "./Projects";
 import { Contact } from "./Contact";
+import { Testimonials } from "./Testimonial";
 
 export function Landing() {
 
@@ -17,7 +18,9 @@ export function Landing() {
           case 'projects':
             return <Projects />;
           case 'contact' :
-            return <Contact />  
+            return <Contact /> 
+          case 'testimonial':
+            return <Testimonials/>
         }
       })()}
     </div>

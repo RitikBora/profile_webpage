@@ -17,7 +17,7 @@ export function Home()
             </div>
         
         </div>
-        <div className=" absolute right-10 bottom-32 overflow-hidden  mr-20">
+        <div className=" absolute right-10 top-48 overflow-hidden  mr-20" style={{paddingTop: '4px'}}>
             <div className="">
                 <img src="profilePhoto.png" alt="" width="480px" height="480px" className=""/>
             </div>

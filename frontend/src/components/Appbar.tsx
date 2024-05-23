@@ -1,4 +1,3 @@
-import  { useState } from 'react';
 import { useRecoilState } from 'recoil';
 import { selectedPageAtom } from '../recoil/atom';
 
@@ -30,6 +29,9 @@ export function Appbar() {
         </div>
         <div className={`${selectedPage === "projects" ? "font-bold": "font-medium"} hover:font-bold  cursor-pointer`} onClick={() => changePage("projects")}>
             Projects
+        </div>
+        <div className={`${selectedPage === "contact" ? "font-bold": "font-medium"} hover:font-bold  cursor-pointer`} onClick={() => changePage("testimonials")}>
+          Testimonials
         </div>
         <div className={`${selectedPage === "contact" ? "font-bold": "font-medium"} hover:font-bold  cursor-pointer`} onClick={() => changePage("contact")}>
           Contact
